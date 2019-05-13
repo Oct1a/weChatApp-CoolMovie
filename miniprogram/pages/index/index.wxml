@@ -1,0 +1,71 @@
+<!-- 搜索 -->
+<view class='index_top'>
+  <!-- <image class='logo' src='../../source/16.jpg'></image> -->
+   <view class='logo'>这里是logo</view>
+   <view class='search_box'>
+    <input type='text' class='search_text' placeholder='在这里搜片哦~'></input>
+   <navigator class='search_ico'>图标</navigator>
+   </view>
+</view>
+
+<!-- 轮播图 -->
+<!--carousel/index.wxml-->
+<swiper class="imageContainer" bindchange="handleChange" previous-margin="50rpx" next-margin="50rpx" circular autoplay>
+  <block wx:for="{{3}}" wx:key="{{index}}">
+    <swiper-item class="item">
+      <image class="itemImg {{currentIndex == index ? 'active': ''}}" src="../../source/16.jpg"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<!-- 导航 -->
+<view class='nav'>
+
+  <view class='van_item'>
+    <image class='nav_ico' src='../../source/u=1875035963,3540454401&fm=26&gp=0.jpg'></image>
+    <text class='nav_text'>热门</text>
+  </view>
+
+  <view class='van_item'>
+    <image class='nav_ico' src='../../source/u=1875035963,3540454401&fm=26&gp=0.jpg'></image>
+    <text class='nav_text'>预告</text>
+  </view>
+  
+  <view class='van_item'>
+    <image class='nav_ico' src='../../source/u=1875035963,3540454401&fm=26&gp=0.jpg'></image>
+    <text class='nav_text'>榜单</text>
+  </view>
+
+  <view class='van_item'>
+    <image class='nav_ico' src='../../source/u=1875035963,3540454401&fm=26&gp=0.jpg'></image>
+    <text class='nav_text'>分类</text>
+  </view>
+  
+</view>
+
+<block >
+    <image src='' style='width:250rpx;height:400rpx;' ></image>
+
+    <!-- 评分 -->
+    <!-- <text> {{item.rating.average}}</text> -->
+   
+</block>
+
+
+
+<!-- 电影分类列表 -->
+<view class='move_class'>
+  <view class='move_title'>正在热播</view>
+  <scroll-view class='move_list' scroll-x="true"  wx:for="{{soonList}}" wx:key="{{index}}">
+
+      <view class='move_itme'>
+        <view class='m_layout'>
+          <image class='move_post' src='{{item.images.small}}' bindtap='godetail' data-id='{{item.id}}'></image>
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+
+
+    </scroll-view>
+</view>

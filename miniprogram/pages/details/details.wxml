@@ -1,0 +1,65 @@
+
+
+<block wx:for='{{datails}}' wx:key='{{key}}'>
+
+ 
+
+  <!-- 片名 -->
+  {{item.title}}
+  <!-- 评分 -->
+  {{item.rating.average}}
+
+  <!-- 导演 -->
+  <view wx:for='{{item.directors}}' wx:key='index' wx:for-item='directors'>
+    {{directors.name}}
+  </view>
+
+  <!-- 总评论条数 -->
+  {{item.reviews_count}}
+
+  <!-- 喜欢人数 -->
+  {{item.wish_count}}
+
+  <!-- 演员 -->
+  <view wx:for='{{item.casts}}' wx:for-item='{{casts}}' wx:key='{{index}}'>
+    <!-- <image src='{{casts.avatars.small}}'></image> -->
+    {{casts.name}}
+   </view>
+
+  <!-- 简介 -->
+  
+  <text>{{item.summary}}</text>
+
+  <!-- 上映时间 -->
+  {{item.pubdates}}
+
+  <!-- 标签 -->
+  {{item.genres}}
+
+  <!-- 类型 -->
+  {{item.genres}}
+  
+  <!-- 片长 -->
+  {{item.durations}}
+
+  <!-- 演员照片 -->
+
+  <!-- 精彩片段 -->
+  <view wx:for='{{item.trailers}}' wx:for-item='trailers'>
+    <video src='{{trailers.resource_url}}' poster='{{trailers.medium}}' title='{{item.title}}'></video>
+  </view>
+
+
+  <!-- 别名 -->
+  <view>{{item.aka}}</view>
+
+  <!-- 评论 -->
+  <view wx:for='{{item.popular_comments}}' wx:for-item='popular_comments'>
+    <image src='{{popular_comments.author.avatar}}'></image>  
+    <text>内容： {{popular_comments.content}}</text>
+    <text> 时间：{{popular_comments.created_at}}</text>
+    <text>有用：{{popular_comments.useful_count}}</text>
+  </view>
+
+
+</block>

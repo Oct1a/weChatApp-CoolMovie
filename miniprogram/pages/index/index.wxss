@@ -1,0 +1,169 @@
+/* 搜索 */
+.index_top {
+  width: 100%;
+  height: 80rpx;
+  background-color: rgb(202, 218, 185);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.index_top .logo{
+  background-color: rgb(211, 211, 255);
+  height: 100%;
+  width: 40%;
+}
+
+.index_top .search_box {
+  height: 100%;
+  width: 55%;
+  position: relative;
+}
+
+.search_box .search_text {
+  background-color: rgb(255, 241, 243);
+  border-radius: 100rpx;
+  padding-left: 15rpx;
+  padding-right: 80rpx;
+  margin-top: 15rpx;
+}
+
+.search_box .search_ico {
+  position: absolute;
+  right: 5rpx;
+  top: 17rpx;
+  font-size: 18px;
+}
+
+
+/* 轮播图 */
+swiper {
+  height: 350rpx;
+  margin-bottom: 40rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 导航 */
+.nav {
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  margin-bottom: 40rpx;
+}
+
+.nav .van_item {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.van_item .nav_ico {
+  width: 60%;
+  height: 70%;
+}
+
+.van_item .nav_text {
+  color: #999;
+  margin-top: 10rpx;
+}
+
+/* 电影分类列表 */
+.move_class {
+  width: 100%;
+  background-color: cornsilk;
+  height: 400rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.move_class .move_title {
+  border-left: 5rpx solid rgb(90, 90, 199);
+  padding-left: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.move_list {
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.move_itme {
+  height: 100%;
+  width: 300rpx;
+  display: inline-block;
+  background-color: red;
+  margin-right: 20rpx;
+}
+
+.move_itme:last-child {
+  margin-right: 0;
+}
+
+.m_layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.move_itme .move_post {
+  width: 100%;
+  height: 80%;
+  border-radius: 20rpx;
+}
+
+
+
+
+
+
+/* carousel/index.wxss */
+
+.imageContainer{
+ width: 100%;
+ height: 500rpx;
+}
+.item{
+ height: 500rpx;
+}
+.itemImg{
+ position: absolute;
+ width: 100%;
+ height: 380rpx;
+ border-radius: 15rpx;
+ z-index: 5;
+ opacity: 0.7;
+ top: 13%;
+}
+.active{
+ opacity: 1;
+ z-index: 10;
+ height: 430rpx;
+ top: 7%;
+ transition:all .2s ease-in 0s;
+}
+
+.space {
+  width: 100rpx;
+  height: 300rpx;
+}

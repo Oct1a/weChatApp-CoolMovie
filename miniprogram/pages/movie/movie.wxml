@@ -1,0 +1,66 @@
+
+<!-- 搜索 -->
+<view class='index_top'>
+  <image class='logo' src='../../images/logo.png'></image>
+   <!-- <view class='search_box'> -->
+   <van-search value="{{ value }}" placeholder="请输入电影名称"  shape='round' maxlength='10'/> 
+    <!-- <input type='text' class='search_text' placeholder='在这里搜片哦~'></input>
+   <navigator class='search_ico'>图标</navigator> -->
+   <!-- </view> -->
+</view>
+
+<!-- 轮播图 -->
+<!--carousel/index.wxml-->
+<swiper class="imageContainer" bindchange="handleChange" previous-margin="50rpx" next-margin="50rpx" circular autoplay>
+  <view wx:for="{{hotList}}"></view>
+  <!-- <block wx:for="{{hotList}}" wx:key="{{index}}">
+    <swiper-item class="item">
+      <image class="itemImg {{currentIndex == index ? 'active': ''}}" src="../../images/Hot-ico.png"></image>
+    </swiper-item>
+  </block> -->
+</swiper>
+
+
+<!-- 导航 -->
+<view class='nav'>
+
+  <view class='van_item'>
+    <image class='nav_ico' src='../../images/Hot-ico.png'></image>
+    <text class='nav_text'>热门</text>
+  </view>
+
+  <view class='van_item'>
+    <image class='nav_ico' src='../../images/Notice-ico.png'></image>
+    <text class='nav_text'>预告</text>
+  </view>
+  
+  <view class='van_item'>
+    <image class='nav_ico' src='../../images/Hotlist-ico.png'></image>
+    <text class='nav_text'>榜单</text>
+  </view>
+
+  <view class='van_item'>
+    <image class='nav_ico' src='../../images/more-ico.png'></image>
+    <text class='nav_text'>分类</text>
+  </view>
+  
+</view>
+
+
+<!-- 电影分类列表 -->
+<view class='move_class'>
+  <view class='move_title'>正在热播</view>
+  <scroll-view class='move_list' scroll-x="true"  >
+     <block wx:for="{{soonList}}" wx:key="{{index}}">
+      <view class='move_itme'>
+        <view class='m_layout'>
+          <image class='move_post' src='{{item.images.small}}' bindtap='godetail' data-id='{{item.id}}'></image>
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </block>
+
+    </scroll-view>
+</view>
+
+
