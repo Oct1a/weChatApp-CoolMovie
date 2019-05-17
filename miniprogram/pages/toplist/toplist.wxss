@@ -1,0 +1,56 @@
+/* pages/hotlist/hotlist.wxss */
+.host_list{
+  padding-top: 30rpx;
+}
+.list{
+  height: 270rpx;
+  width: 100%;
+  display: flex;
+  margin-bottom: 30rpx;
+}
+
+.ranking{
+  display: flex;
+  width: 60rpx;
+  height: 120%;
+  margin-left:30rpx;
+  margin-right: 30rpx; 
+}
+.ranking image{
+  margin-top: 40rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+.poster image{
+  display: flex;
+  flex-direction: column;
+  width: 180rpx;
+  height: 270rpx;
+  border-radius: 15rpx;
+  margin-right: 30rpx;
+  box-shadow: 0rpx 10rpx 20rpx #ccc;
+}
+
+.title{
+  display: flex;
+  padding-top: 20rpx;
+  margin-right: 20rpx; 
+  /* font-weight: 700; */
+}
+
+.discribe{
+  display: flex;
+  color: #ccc;
+  font-size:0.7rem;
+  width: 80%;
+  margin-bottom: 10rpx;
+  margin-top: 20rpx; 
+}
+.rate{
+  display: inline-flex;
+  margin-right: 20rpx;
+}
+.grade{
+  color: red;
+  font-weight: 700;
+}

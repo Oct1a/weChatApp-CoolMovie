@@ -1,0 +1,35 @@
+
+<wxs module="filters" src="module.wxs"></wxs>
+
+<view class='host_list'>
+  
+  <block wx:for='{{hotList}}' wx:key='{{index}}'>
+
+  <view class='list' >
+      <view class='ranking'>
+       <image src='{{index ==0 ? rank1 : (index == 1?rank2:(index == 2?rank3:(index == 3?rank4:"")))}}'></image>
+      </view>
+
+      <view class='poster' span='4'>
+        <image src='{{item.images.small}}' data-id='{{item.id}}' bindtap='gotoDetail'></image>
+      </view>
+
+
+      <view data-id='{{item.id}}' bindtap='gotoDetail'>
+        <text class='title'>{{item.title}}</text>
+        <text class='discribe' decode="{{true}}" >
+          <block wx:for='{{item.casts}}' wx:key="{{item.index}}" wx:for-item='cast'> {{cast.name}}&nbsp;</block>
+          
+        </text>
+        <van-rate size='15' value="{{filters.toFix(item.rating.average)}}" readonly count="{{ 5 }}" bind:change="onChange" class='rate'
+  />
+        <text class='grade'>{{item.rating.average}}</text>
+      </view>
+        
+
+
+  </view>
+
+  </block>
+</view>
+
