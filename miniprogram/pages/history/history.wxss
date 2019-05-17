@@ -1,0 +1,52 @@
+/* pages/history/history.wxss */
+
+.move_class {
+  width: 100%;
+  height: 1000rpx;
+  margin-top: 100rpx;
+  margin-left: 100rpx;
+  background-color: red;
+}
+
+.move_list {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  
+}
+
+.move_list image{
+  height: 754rpx;
+  width:540rpx;
+  margin-right: 50rpx;
+}
+
+/* 观看的时间 */
+
+.move_list text:nth-child(1){
+  display: flex;
+  color: white;
+}
+
+
+/* 电影名字 */
+.move_list text:nth-child(2){
+  color: white;
+  display: flex;
+  font-size: 1rem;
+}
+
+/* 电影评分 */
+.move_list text:nth-child(3){
+  color: white;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+/* 观看人数 */
+.move_list text:nth-child(4){
+  display: flex;
+  font-size: 0.8rem;
+  
+}

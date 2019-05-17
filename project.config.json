@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -47,6 +47,48 @@
 					"pathName": "pages/details/details",
 					"query": "moveid=26100958",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "profile",
+					"pathName": "pages/profile/profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "welcome",
+					"pathName": "pages/welcome/weclome",
+					"query": "",
+					"scene": 1001
+				},
+				{
+					"id": -1,
+					"name": "hotlist",
+					"pathName": "pages/hotlist/hotlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "about",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "history",
+					"pathName": "pages/history/history",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "class",
+					"pathName": "pages/classify/classify",
+					"query": "",
+					"scene": 1001
 				}
 			]
 		}

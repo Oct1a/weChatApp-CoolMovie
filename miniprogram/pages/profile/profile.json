@@ -1,3 +1,11 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "用户中心",
+  "usingComponents": {
+    "van-cell": "vant-weapp/cell",
+    "van-cell-group": "vant-weapp/cell-group",
+    "van-row": "vant-weapp/row",
+    "van-col": "vant-weapp/col",
+    "van-button": "vant-weapp/button"
+  }
+
 }

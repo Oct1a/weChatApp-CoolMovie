@@ -1,1 +1,77 @@
 /* pages/profile/profile.wxss */
+
+.custom-class{
+  background: red;
+}
+
+.top_profile{
+
+  width: 100%;
+  display: flex;
+  padding-top: 30rpx;
+  align-items: center;
+  padding-bottom: 100rpx;
+  flex-direction: column;
+ 
+}
+
+.top_profile text:nth-child(2){
+  padding-top: 20rpx;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.top_profile text:nth-child(3){
+  padding-top: 10rpx;
+  font-size: 0.7rem;
+  color: #ccc;
+}
+
+
+.profile_info{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding-bottom: 50rpx;
+  width: 100%;
+}
+
+.average{
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 30rpx;
+  background-size: cover;
+  display:inline-block;
+}
+
+.history_poster{
+  height: 300rpx;
+  padding-left: 100rpx;
+  background-color: #f1f2f6;
+}
+
+.history_poster image{
+  width: 180rpx;
+  height: 270rpx;
+  border-radius: 15rpx;
+  margin-right: 30rpx;
+  box-shadow: 6rpx 10rpx 20rpx #ccc;
+}
+
+.van-cell__title{
+  font-weight: bold;
+}
+
+.van-cell{
+  background-color: #f1f2f6!important;
+  
+}
+
+.van-cell__value {
+  color:#1f83ff!important;
+  font-weight: bold;
+}
+
+van-button{
+  margin: 120rpx;
+}

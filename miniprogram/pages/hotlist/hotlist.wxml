@@ -1,0 +1,32 @@
+
+<wxs module="filters" src="module.wxs"></wxs>
+
+<view class='host_list'>
+  
+  <block wx:for='{{hotList}}' wx:key='{{index}}'>
+
+  <view class='list'>
+      <view class='ranking'>
+      <image src='../../images/ranking1.png'></image>
+      </view>
+
+      <view class='poster' span='4'>
+        <image src='{{item.images.small}}'></image>
+      </view>
+
+
+      <view>
+        <text class='title'>{{item.title}}</text>
+        <text class='discribe'>Robert Downey Jr,Chris Evans,Mark Ruffalo</text>
+        <van-rate size='15' value="{{2 }}" readonly count="{{ 5 }}" bind:change="onChange" class='rate'
+  />
+        <text class='grade'>{{item.rating.average}}</text>
+      </view>
+        
+
+
+  </view>
+
+  </block>
+</view>
+

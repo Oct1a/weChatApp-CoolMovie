@@ -1,0 +1,36 @@
+<van-row>
+  <view class='top_profile'>
+      <!-- <block wx:if='{{login_state}}'> -->
+        <!-- <image src='{{avatarUrl}}' class='average' ></image> -->
+         <button 
+          open-type="getUserInfo" 
+          bindgetuserinfo="onGetUserInfo"
+          class="average"
+          style="background-image: url({{avatarUrl}})"
+      ></button>
+        <text>{{userInfo.nickName}}</text>
+        <text>we soon betieve what desite</text>
+       {{openid}}
+      <!-- </block> -->
+      <!-- <block wx:else>
+        <van-button plain type="primary" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">点击登录         </van-button>
+      </block> -->
+  </view>
+   
+</van-row>
+
+<van-row>
+  <van-cell title="观看历史"  icon="clock-o" is-link value="1" border='false'/>
+  <view class='history_poster'>
+    <image src='../../images/p2554613277.jpg'></image>
+    <image src='../../images/p2554613277.jpg'></image>
+    <image src='../../images/p2554613277.jpg'></image>
+  </view>
+  
+  <van-cell title="我的收藏" icon="bookmark-o" is-link border='false' />
+  <van-cell title="手机信息" icon="location-o" is-link value="1"/>
+  
+  <van-cell title="清除缓存" icon="location-o"  bindtap='clearStorage'/>
+  <van-cell title="关于我们" icon="setting-o" is-link url='../about/about'  />
+
+</van-row>

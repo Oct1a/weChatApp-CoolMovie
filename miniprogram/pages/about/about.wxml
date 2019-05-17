@@ -1,0 +1,19 @@
+<view class='about_title'>
+  <text>电影推荐</text>
+</view>
+
+<view class='dec'>
+  <text>后端支持</text>
+  <text>微信云开发</text>
+</view>
+
+<view class='dec'>
+  <text>作者</text>
+  <text>豆瓣API:https:developers.douban.com</text>
+</view>
+
+<view class='dec'>
+  <text>此项目所用到的API</text>
+  <text>https://developers.douban.com</text>
+  <text>https://github.com/request/request-promise</text>
+</view>

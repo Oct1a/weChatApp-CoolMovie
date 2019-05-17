@@ -1,0 +1,14 @@
+/* pages/welcome/weclome.wxss */
+page{
+  height: 100%;
+  background: #b3d4db;
+}
+
+swiper{
+  height: 100%;
+  width: 100%;
+}
+
+swiper image{
+  height: 100%;
+}

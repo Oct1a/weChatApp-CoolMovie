@@ -1,0 +1,17 @@
+<!--pages/history/history.wxml-->
+<view class='move_class' >
+
+  <scroll-view class='move_list' scroll-x  >
+    <block wx:for='{{history}}'>
+      <view >
+        <text>You last seen 16:24</text>
+          <!-- <image src='{{item}}' ></image> -->
+        <text>FURY</text>
+        <text>8.9</text>
+        <text>876520 People are watching</text>
+      </view>
+
+    </block>
+  </scroll-view>
+
+</view>

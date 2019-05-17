@@ -2,7 +2,13 @@
   "pages": [
     "pages/movie/movie",
     "pages/profile/profile",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/settings/settings",
+    "pages/welcome/weclome",
+    "pages/hotlist/hotlist",
+    "pages/about/about",
+    "pages/history/history",
+    "pages/classify/classify"
     
   ],
   "window": {

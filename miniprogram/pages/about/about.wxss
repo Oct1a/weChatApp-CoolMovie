@@ -1,0 +1,27 @@
+/* pages/about/about.wxss */
+.about_title{
+  margin-top: 200rpx;
+  margin-bottom: 100rpx;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  font-size: 2rem;
+}
+.dec{
+  margin-left: 60rpx;
+  margin-bottom: 100rpx;
+}
+
+.dec text:nth-child(1){
+  font-size: 1rem;
+  display: flex;
+  padding-bottom: 20rpx;
+}
+.dec text:not(:first-child){
+  display: flex;
+  color: #ccc;
+  font-size: 0.85rem;
+  margin-left: 40rpx;
+  padding-bottom: 30rpx;
+}
+
