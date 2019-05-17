@@ -10,7 +10,7 @@ Page({
 
   getTopList: function () {
     wx.showToast({
-      title: '成功',
+      title: '拼命加载中',
       icon: 'success',
     })
     wx.cloud.callFunction({
@@ -26,11 +26,11 @@ Page({
           hotList: this.data.hotList.concat(JSON.parse(res.result).subjects
           )
         })
-        wx.hideLoading()
+        wx.hideToast()
       })
       .catch(err => {
         console.log(err)
-        wx.hideLoading()
+        wx.hideToast()
       })
   },
 
