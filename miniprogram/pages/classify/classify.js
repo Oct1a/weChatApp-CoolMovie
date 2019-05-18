@@ -106,7 +106,7 @@ Page({
         url: 'seach',
         tag: encodeURI(this.data.className),
         limit: this.data.limit,
-        start: 0,
+        start: this.data.limit,
       }
     }).then(res => {
       this.setData({
