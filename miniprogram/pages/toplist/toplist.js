@@ -9,7 +9,8 @@ Page({
     rank1:'../../images/ranking1.png',
     rank2: '../../images/ranking2.png',
     rank3: '../../images/ranking3.png',
-    rank4: '../../images/ranking4.png'
+    rank4: '../../images/ranking4.png',
+
   },
 
   getTopList: function () {

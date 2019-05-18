@@ -1,2 +1,5 @@
 <!--pages/settings/settings.wxml-->
-<text>pages/settings/settings.wxml</text>
+
+<view wx:for='{{soonList}}' wx:key='{{index}}'>
+  {{item.id}}
+</view>

@@ -24,14 +24,15 @@ Page({
     })
 
     wx.cloud.callFunction({
-      name: 'movie_list',
+      name: 'cloud_movie',
       data: {
+        url:'list',
         start: this.data.hotList.length,
         count: 10,
       }
     })
       .then(res => {
-        // console.log(res)
+        console.log(res)
         this.setData({
           hotList: this.data.hotList.concat(JSON.parse(res.result).subjects
           )
@@ -47,8 +48,9 @@ Page({
   // 获取正在上映电影列表
   getSoonList:function(){
     wx.cloud.callFunction({
-      name: 'movie_soon',
+      name: 'cloud_movie',
       data: {
+        url:'soon',
         start: this.data.soonList.length,
         count: 10,
       }
@@ -78,7 +80,7 @@ Page({
   
   gotoTop:function(){
     wx.navigateTo({
-      url: '../hotlist/hotlist',
+      url: '../toplist/toplist',
     })
   },
 
@@ -117,13 +119,6 @@ Page({
     this.getSoonList()
 
     
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    this.getHotList()
   },
 
 

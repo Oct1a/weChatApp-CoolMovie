@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -89,6 +89,13 @@
 					"pathName": "pages/classify/classify",
 					"query": "",
 					"scene": 1001
+				},
+				{
+					"id": -1,
+					"name": "视频流",
+					"pathName": "pages/settings/settings",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

@@ -16,6 +16,8 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {
+      'movie_id':null,
+    }
   }
 })

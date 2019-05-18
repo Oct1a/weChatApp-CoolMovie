@@ -4,8 +4,7 @@
     "pages/profile/profile",
     "pages/details/details",
     "pages/settings/settings",
-    "pages/welcome/weclome",
-    "pages/hotlist/hotlist",
+    "pages/toplist/toplist",
     "pages/about/about",
     "pages/history/history",
     "pages/classify/classify"
@@ -15,7 +14,7 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "white",
-    "navigationBarTitleText": "最新电影",
+    "navigationBarTitleText": "CoolMovie",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
