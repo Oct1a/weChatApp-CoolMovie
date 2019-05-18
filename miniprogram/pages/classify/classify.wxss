@@ -1,1 +1,28 @@
 /* pages/classify/classify.wxss */
+.container{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, auto);
+  margin: 30rpx 0rpx 50rpx 30rpx;
+}
+.item {
+  border: 1px solid #fff;
+  border-radius: .2rem;
+  font-size: .8em;
+  min-height: 3rem;
+  margin-bottom: 30rpx;
+  margin-right: 30rpx;
+
+}
+.item image{
+  width: 202rpx;
+  height: 274rpx;
+  display: flex;
+  margin-bottom: 15rpx;
+  border-radius: 5%;
+  box-shadow: 0rpx 10rpx 20rpx #ccc;
+}
+.item text{
+  font-weight: 700;
+  font-size: .65rem;
+}
