@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "van-row": "vant-weapp/row",
-    "van-col": "vant-weapp/col",
-    "van-rate": "vant-weapp/rate"
-  }
-}
